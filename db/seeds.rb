@@ -5,3 +5,35 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# Book.destroy_all
+ books = Book.create([{
+  title: "Physics",
+  author: "Pete Docter",
+  description: "A.",
+ 
+},
+{
+  title: "Biology",
+  author: "Pete Docter",
+  description: "B.",
+ 
+},
+{
+ title: "English",
+  author: "Pete Doct",
+  description: "C.",
+  
+}])
+# p "Created #{Book.count} Books"
+
+users = User.create([
+    {
+        user_name: "John Doe",
+        password: "1324rf",
+
+    }
+
+
+
+])
