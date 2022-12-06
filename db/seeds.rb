@@ -31,9 +31,12 @@ users = User.create([
     {
         user_name: "John Doe",
         password: "1324rf",
-
     }
+])
 
-
-
+reviews = Review.create([
+{
+    rating: "5",
+    comment: "I love it",
+}
 ])
