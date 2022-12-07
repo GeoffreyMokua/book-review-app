@@ -46,3 +46,8 @@ module ReactRailsApiProjectTemplate
     config.api_only = true
   end
 end
+
+
+Rails.application.configure do
+  config.public_file_server.enabled = true
+end
