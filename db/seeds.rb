@@ -29,7 +29,7 @@
 
 users = User.create([
     {
-        user_name: "John Doe",
+        email: "john doe",
         password: "1324rf",
     }
 ])
