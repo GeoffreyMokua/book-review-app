@@ -27,16 +27,35 @@
 }])
 # p "Created #{Book.count} Books"
 
-users = User.create([
+users = [
     {
         email: "john doe",
         password: "1324rf",
     }
-])
+]
+users.each{|user| User.create(user)}
+puts "user created and seed"
 
-reviews = Review.create([
+reviews = [
 {
-    rating: "5",
-    comment: "I love it",
+    rating: "1",
+    comment: "terrible plot",
+    book_id: 1,
+    user_id: 1,
+},
+{
+    rating: "2",
+    comment: "mid character development",
+    book_id: 2,
+    user_id: 1,
+},
+{
+    rating: "3",
+    comment: "was okey",
+    book_id: 3,
+    user_id: 1,
 }
-])
+]
+
+reviews.each{|review| Review.create(review)}
+puts "reviews created and seeded"
