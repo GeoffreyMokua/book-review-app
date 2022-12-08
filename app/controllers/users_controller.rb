@@ -15,13 +15,10 @@ class UsersController < ApplicationController
     end
 
     def create
-        @user = User.create!(user_params)
-        if @user.save
-            render json: @user, status: :created
-        else
-        render :action => 'new'
-        end
+        user = User.create(user_params)
+        render json: user
     end
+
 
     def update
         user = User.find_by(params[:id])
