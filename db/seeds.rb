@@ -29,7 +29,7 @@
 
 users = [
     {
-        email: "john doe",
+        user_name: "john doe",
         password: "1324rf",
     }
 ]
@@ -41,7 +41,7 @@ reviews = [
     rating: "1",
     comment: "terrible plot",
     book_id: 1,
-    user_id: 1,
+    user_id: 2,
 },
 {
     rating: "2",
